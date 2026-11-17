@@ -1,0 +1,23 @@
+tienda-disfraces-backend/
+├── src/
+│   ├── config/
+│   │   └── db.js                 # Conexión a la base de datos MySQL (mysql2)
+│   ├── controllers/
+│   │   ├── authController.js     # Lógica de Registro y Login
+│   │   ├── clienteController.js  # CRUD de Clientes (con regla de restricción)
+│   │   ├── empleadoController.js # CRUD de Empleados
+│   │   ├── disfrazController.js  # CRUD de Disfraces, disponibilidad y consultas
+│   │   └── alquilerController.js # Fichas de alquiler y reportes de recaudación
+│   ├── middlewares/
+│   │   ├── authMiddleware.js     # Verificadores de Token JWT y Roles (Admin)
+│   │   └── validateMiddleware.js # Manejador de errores de express-validator
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── clienteRoutes.js
+│   │   ├── empleadoRoutes.js
+│   │   ├── disfrazRoutes.js
+│   │   └── alquilerRoutes.js
+│   └── app.js                    # Configuración principal de Express
+├── .env                          # Variables de entorno
+├── package.json
+└── server.js                     # Punto de entrada de la aplicación

@@ -1,0 +1,16 @@
+tienda-disfraces-frontend/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx         # Barra de navegación superior
+│   │   ├── Login.jsx          # Componente de inicio de sesión flexible
+│   │   ├── Dashboard.jsx      # Panel principal y analíticas (Reportes)
+│   │   ├── Disfraces.jsx      # Listado, disponibilidad y baja (Admin)
+│   │   └── Clientes.jsx       # Gestión y listado de clientes
+│   ├── services/
+│   │   └── api.js             # Configuración centralizada de Axios con interceptores JWT
+│   ├── App.jsx                # Enrutador simple por estados
+│   ├── index.css              # Estilos globales limpios
+│   └── main.js / index.js     # Punto de entrada
+├── package.json
+└── vite.config.js             # O React Scripts
